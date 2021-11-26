@@ -1,0 +1,9 @@
+seq = [0, 1]
+def fibonacci(n):
+  try:
+    return seq[n]
+  except IndexError:
+    number = fibonacci(n-1) + fibonacci(n-2)
+    seq.append(number)
+    return number
+  
